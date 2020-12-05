@@ -2,21 +2,30 @@
 
 ## Getting Started
 
+Note: The instructions below are for a Windows 10 platform.
+
 ### Installing Dependencies
 
 #### Python 3.7
 
 Follow instructions to install the latest version of python for your platform in the [python docs](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
 
-#### Virtual Enviornment
+##### Python 3.8 Addendum
 
-We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+Install https://visualstudio.microsoft.com/visual-cpp-build-tools
+
+Go into backend\env\Lib\site-packages\sqlalchemy\util\compat.py and follow the instructions here: https://knowledge.udacity.com/questions/132762#132817
+Also: pip install --upgrade Werkzeug
+
+#### Virtual Environment
+
+We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organized. Instructions for setting up a virtual environment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
 #### PIP Dependencies
 
-Once you have your virtual environment setup and running, install dependencies by naviging to the `/backend` directory and running:
+Once you have your virtual environment setup and running, install dependencies by navigating to the `/backend` directory and running:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -36,17 +45,16 @@ From within the `./src` directory first ensure you are working using your create
 
 Each time you open a new terminal session, run:
 
-```bash
-export FLASK_APP=api.py;
+```
+set FLASK_ENV=development
+set FLASK_APP=api.py
 ```
 
 To run the server, execute:
 
-```bash
-flask run --reload
 ```
-
-The `--reload` flag will detect file changes and restart the server automatically.
+flask run
+```
 
 ## Tasks
 

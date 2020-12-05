@@ -18,7 +18,7 @@ The Ionic Command Line Interface is required to serve and build the frontend. In
 
 This project uses NPM to manage software dependencies. NPM Relies on the package.json file located in the `frontend` directory of this repository. After cloning, open your terminal and run:
 
-```bash
+```
 npm install
 ```
 
@@ -26,7 +26,7 @@ npm install
 
 ## Required Tasks
 
-### Configure Enviornment Variables
+### Configure Environment Variables
 
 Ionic uses a configuration file to manage environment variables. These variables ship with the transpiled software and should not include secrets.
 
@@ -36,7 +36,7 @@ Ionic uses a configuration file to manage environment variables. These variables
 
 Ionic ships with a useful development server which detects changes and transpiles as you work. The application is then accessible through the browser on a localhost port. To run the development server, cd into the `frontend` directory and run:
 
-```bash
+```
 ionic serve
 ```
 
@@ -49,7 +49,7 @@ The frontend framework is a bit beefy; here are the two areas to focus your stud
 
 ### Authentication
 
-The authentication system used for this project is Auth0. `./src/services/auth.service.ts` contains the logic to direct a user to the Auth0 login page, managing the JWT token upon successful callback, and handle setting and retrieving the token from the local store. This token is then consumed by our DrinkService (`./src/services/auth.service.ts`) and passed as an Authorization header when making requests to our backend.
+The authentication system used for this project is Auth0. `./src/app/services/auth.service.ts` contains the logic to direct a user to the Auth0 login page, managing the JWT token upon successful callback, and handle setting and retrieving the token from the local store. This token is then consumed by our DrinkService (`./src/app/services/drink.service.ts`) and passed as an Authorization header when making requests to our backend.
 
 ### Authorization
 
