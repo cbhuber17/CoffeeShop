@@ -21,6 +21,8 @@ Also: pip install --upgrade Werkzeug
 
 We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organized. Instructions for setting up a virtual environment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
+For Windows 10, this means going into the backend\env\Scripts folder and running ```activate.bat``` via command prompt.  Now this command prompt has (env) in it and is the virtual environment for this project, only containing the dependencies required for it (i.e. those from requirements.txt).
+
 #### PIP Dependencies
 
 Once you have your virtual environment setup and running, install dependencies by navigating to the `/backend` directory and running:
